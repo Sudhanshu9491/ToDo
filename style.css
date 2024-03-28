@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.title{
+    text-align: center;
+    background-color: #2564cf;
+    color: white;
+}
+#checkboxLable{
+    margin-left: 1rem;
+    margin-top: 1rem;
+    position: absolute;
+}
+#checkboxLable2{
+    margin-left: 13rem;
+    margin-top: .6rem;
+    position: absolute;
+    /* border: 2px solid black; */
+}
+.sidebar {
+    background-color: white;
+    border: 2px solid black;
+    color: white;
+    position: fixed;
+    left: -450px;
+    transition: all ease-in-out .5s;
+    width: 18rem;
+    height: 100vh;
+}
+
+#checkbox:checked ~ .sidebar {
+    left: 0;
+    transition: all ease-in-out .5s;
+}
+#checkbox:checked ~ #checkboxLable {
+    /* display: none;
+    transition: all ease-in 10s; */
+    z-index: 100;
+    /* color: white; */
+}
+.newLists{
+    padding: 1rem;
+    width: 16rem;
+    color: blue;
+    font-size: larger;
+}
+.newLists:hover{
+    background-color: #edebe9;
+    transition: all ease .2s;   
+}
+.newLists:hover #newList{
+    background-color: #edebe9;
+    transition: all ease .2s;   
+}
+#newListLable{
+    position: absolute;
+     color: black;
+     font-size:     px;
+     /* padding-left: ; */
+}
+#newList{
+    background-color: white;
+}
+.navInput{
+    margin-left: 1.5rem;
+    border: none;
+}
+#newList::placeholder{
+    color: blue;
+   
+}
+input:focus {
+    outline: none; /* Remove the default focus border */
+   
+}
